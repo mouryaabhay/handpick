@@ -1,147 +1,538 @@
 {
-  "Hosting & Cloud Services": {
-    "icon": "Server",
-    "Hosting & Client Dashboards": [
-      "https://client.galactichosting.net/"
-    ],
-    "Databases": [
-      "https://cloud.mongodb.com/"
-    ]
-  },
-  "Design & UI Resources": {
-    "icon": "PaintBrush",
-    "CSS Design & Guidelines": [
-      "https://css-tricks.com/the-shapes-of-css/#aa-trapezoid-shape",
-      "https://cssguidelin.es/",
-      "https://github.com/AllThingsSmitty/css-protips?tab=readme-ov-file#use-a-css-reset"
-    ],
-    "Layout & Pattern Generators": [
-      "https://gridlayoutgenerator.com/",
-      "https://css-pattern.com/",
-      "https://patterncraft.fun/",
-      "https://geary.co/clamp-calculator/"
-    ],
-    "Animation Tools": [
-      "https://animista.net/"
-    ]
-  },
-  "UI Frameworks & Components": {
-    "icon": "Layers",
-    "UI Libraries": [
-      "https://ui.shadcn.com/",
-      "https://uiverse.io/",
-      "https://stacksorted.com/buttons"
-    ],
-    "UI Kits & Resources": [
-      "https://framesforsketch.com/",
-      "https://www.checklist.design/"
-    ]
-  },
-  "Icons & Visual Assets": {
-    "icon": "FileText",
-    "Icon Libraries": [
-      "https://iconbuddy.com/search?q=menu",
-      "https://iconists.co/central?aff=WW8vV#the-grid",
-      "https://www.isocons.app/",
-      "https://iconscout.com/unicons/free-line-icons/arrow"
-    ]
-  },
-  "Color, Gradient & Texture Tools": {
-    "icon": "Zap",
-    "Color Palette Tools": [
-      "https://tintsshades.netlify.app/",
-      "https://supercolorpalette.com/?scp=G0-hsl-FFDA1F-FFC71F-FFB41F-FFA21F-FF8F1F",
-      "https://accessiblepalette.com/"
-    ],
-    "Image & Gradient Tools": [
-      "https://www.adobe.com/express/feature/image/remove-background",
-      "https://cleanup.pictures/",
-      "https://photogradient.com/",
-      "https://topography.blixthalka.com/"
-    ]
-  },
-  "Diagramming & Visualization": {
-    "icon": "Cpu",
-    "Diagram Tools": [
-      "https://app.diagrams.net/?libs=general;er",
-      "https://excalidraw.com/",
-      "https://stan-smith.github.io/FossFLOW/",
-      "https://plantuml.com/"
-    ]
-  },
-  "Typography & Fonts": {
-    "icon": "Type",
-    "Font Resources": [
-      "https://www.fontshare.com/fonts/switzer",
-      "https://www.fontshare.com/fonts/satoshi",
-      "https://fonts.google.com/specimen/Manrope?preview.text=Abhay%20ABHAY",
-      "https://fonts.google.com/specimen/Atkinson+Hyperlegible"
-    ]
-  },
-  "Development & Code Tools": {
-    "icon": "Code",
-    "Developer Roadmaps & Guides": [
-      "https://roadmap.sh/full-stack",
-      "https://github.com/markodenic/web-development-resources",
-      "https://github.com/lifeparticle/Markdown-Cheatsheet"
-    ],
-    "Code Experiments": [
-      "https://codepen.io/kjbrum/pen/wBBLXx?editors=0100",
-      "https://codepen.io/JoseRosario/pen/BWqMwK?editors=0100"
-    ],
-    "Browser & Debugging Tools": [
-      "https://eruda.liriliri.io/"
-    ],
-    "APIs & Developer Resources": [
-      "https://publicapis.dev/",
-      "https://free-for.dev/#/"
-    ]
-  },
-  "AI & Machine Learning Tools": {
-    "icon": "CpuChip",
-    "AI Platforms": [
-      "https://openrouter.ai/",
-      "https://aistudio.google.com/",
-      "https://teachablemachine.withgoogle.com/"
-    ]
-  },
-  "API & Network Tools": {
-    "icon": "Terminal",
-    "API & Testing": [
-      "https://hoppscotch.io/"
-    ],
-    "Network & Routing": [
-      "https://www.closerouter.com/",
-      "https://cobalt.tools/",
-      "https://visualsubnetcalc.com/"
-    ]
-  },
-  "Utilities & Miscellaneous": {
-    "icon": "Folder",
-    "Utility Tools": [
-      "https://tinywow.com/"
-    ],
-    "Data Management": [
-      "https://takeout.google.com/u/2/?pli=1&amp;pageId=none"
-    ]
-  },
-  "Documents & References": {
-    "icon": "FileText",
-    "Project Documents": [
-      "https://www.scribd.com/document/108482080/College-Website-Creation",
-      "https://docs.google.com/document/d/10ErN5NARF6nwuRBy9V3HEMKD0OjBWjh5/mobilebasic?fbclid=PAT01DUANIOWJleHRuA2FlbQIxMAABp_zgcs6XiCiIm3npasCWfSd8PWnJBfiHQLW2mFvGDQIn9p220ZdL_Khs-YTS_aem_GT-Or9er3mRzNjN-rf_sVQ"
-    ]
-  },
-  "Inspiration & Showcase": {
-    "icon": "PaintBrush",
-    "Design Case Studies": [
-      "https://www.behance.net/gallery/171793989/Streamlining-Restaurant-Operations-%28Admin-Dashboard%29"
-    ]
-  },
-  "Other / Uncategorized": {
-    "icon": "Folder",
-    "Miscellaneous": [
-      "https://www.srbijasans.rs/"
-    ]
-  }
+  "categories": [
+    {
+      "name": "Hosting & Cloud Services",
+      "icon": "Server",
+      "subCategories": [
+        {
+          "name": "Hosting & Client Dashboards",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Galactic Hosting Client",
+              "url": "https://client.galactichosting.net/",
+              "imageUrl": ""
+            }
+          ]
+        },
+        {
+          "name": "Databases",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "MongoDB Cloud",
+              "url": "https://cloud.mongodb.com/",
+              "imageUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Design & UI Resources",
+      "icon": "PaintBrush",
+      "subCategories": [
+        {
+          "name": "CSS Design & Guidelines",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "CSS Tricks - Shapes of CSS",
+              "url": "https://css-tricks.com/the-shapes-of-css/#aa-trapezoid-shape",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "CSS Guidelines",
+              "url": "https://cssguidelin.es/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "CSS Protips (GitHub)",
+              "url": "https://github.com/AllThingsSmitty/css-protips?tab=readme-ov-file#use-a-css-reset",
+              "imageUrl": ""
+            }
+          ]
+        },
+        {
+          "name": "Layout & Pattern Generators",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Grid Layout Generator",
+              "url": "https://gridlayoutgenerator.com/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "CSS Pattern",
+              "url": "https://css-pattern.com/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Pattern Craft",
+              "url": "https://patterncraft.fun/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Clamp Calculator",
+              "url": "https://geary.co/clamp-calculator/",
+              "imageUrl": ""
+            }
+          ]
+        },
+        {
+          "name": "Animation Tools",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Animista",
+              "url": "https://animista.net/",
+              "imageUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "UI Frameworks & Components",
+      "icon": "Layers",
+      "subCategories": [
+        {
+          "name": "UI Libraries",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "shadcn/ui",
+              "url": "https://ui.shadcn.com/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Uiverse",
+              "url": "https://uiverse.io/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "StackSorted Buttons",
+              "url": "https://stacksorted.com/buttons",
+              "imageUrl": ""
+            }
+          ]
+        },
+        {
+          "name": "UI Kits & Resources",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Frames for Sketch",
+              "url": "https://framesforsketch.com/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Checklist Design",
+              "url": "https://www.checklist.design/",
+              "imageUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Icons & Visual Assets",
+      "icon": "FileText",
+      "subCategories": [
+        {
+          "name": "Icon Libraries",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "IconBuddy",
+              "url": "https://iconbuddy.com/search?q=menu",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Iconists Central",
+              "url": "https://iconists.co/central?aff=WW8vV#the-grid",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Isocons",
+              "url": "https://www.isocons.app/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "IconScout Unicons",
+              "url": "https://iconscout.com/unicons/free-line-icons/arrow",
+              "imageUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Color, Gradient & Texture Tools",
+      "icon": "Zap",
+      "subCategories": [
+        {
+          "name": "Color Palette Tools",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Tints & Shades Generator",
+              "url": "https://tintsshades.netlify.app/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Super Color Palette",
+              "url": "https://supercolorpalette.com/?scp=G0-hsl-FFDA1F-FFC71F-FFB41F-FFA21F-FF8F1F",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Accessible Palette",
+              "url": "https://accessiblepalette.com/",
+              "imageUrl": ""
+            }
+          ]
+        },
+        {
+          "name": "Image & Gradient Tools",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Adobe Remove Background",
+              "url": "https://www.adobe.com/express/feature/image/remove-background",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Cleanup Pictures",
+              "url": "https://cleanup.pictures/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Photo Gradient",
+              "url": "https://photogradient.com/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Topography Generator",
+              "url": "https://topography.blixthalka.com/",
+              "imageUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Diagramming & Visualization",
+      "icon": "Cpu",
+      "subCategories": [
+        {
+          "name": "Diagram Tools",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Diagrams.net",
+              "url": "https://app.diagrams.net/?libs=general;er",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Excalidraw",
+              "url": "https://excalidraw.com/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "FossFLOW",
+              "url": "https://stan-smith.github.io/FossFLOW/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "PlantUML",
+              "url": "https://plantuml.com/",
+              "imageUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Typography & Fonts",
+      "icon": "Type",
+      "subCategories": [
+        {
+          "name": "Font Resources",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Fontshare - Switzer",
+              "url": "https://www.fontshare.com/fonts/switzer",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Fontshare - Satoshi",
+              "url": "https://www.fontshare.com/fonts/satoshi",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Google Fonts - Manrope",
+              "url": "https://fonts.google.com/specimen/Manrope?preview.text=Abhay%20ABHAY",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Google Fonts - Atkinson Hyperlegible",
+              "url": "https://fonts.google.com/specimen/Atkinson+Hyperlegible",
+              "imageUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Development & Code Tools",
+      "icon": "Code",
+      "subCategories": [
+        {
+          "name": "Developer Roadmaps & Guides",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Full Stack Roadmap",
+              "url": "https://roadmap.sh/full-stack",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Web Development Resources (GitHub)",
+              "url": "https://github.com/markodenic/web-development-resources",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Markdown Cheatsheet",
+              "url": "https://github.com/lifeparticle/Markdown-Cheatsheet",
+              "imageUrl": ""
+            }
+          ]
+        },
+        {
+          "name": "Code Experiments",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "CSS Menu Experiment (CodePen)",
+              "url": "https://codepen.io/kjbrum/pen/wBBLXx?editors=0100",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Animated Button (CodePen)",
+              "url": "https://codepen.io/JoseRosario/pen/BWqMwK?editors=0100",
+              "imageUrl": ""
+            }
+          ]
+        },
+        {
+          "name": "Browser & Debugging Tools",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Eruda Debug Console",
+              "url": "https://eruda.liriliri.io/",
+              "imageUrl": ""
+            }
+          ]
+        },
+        {
+          "name": "APIs & Developer Resources",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Public APIs",
+              "url": "https://publicapis.dev/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Free for Dev",
+              "url": "https://free-for.dev/#/",
+              "imageUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI & Machine Learning Tools",
+      "icon": "CpuChip",
+      "subCategories": [
+        {
+          "name": "AI Platforms",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "OpenRouter",
+              "url": "https://openrouter.ai/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Google AI Studio",
+              "url": "https://aistudio.google.com/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Teachable Machine",
+              "url": "https://teachablemachine.withgoogle.com/",
+              "imageUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "API & Network Tools",
+      "icon": "Terminal",
+      "subCategories": [
+        {
+          "name": "API & Testing",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Hoppscotch",
+              "url": "https://hoppscotch.io/",
+              "imageUrl": ""
+            }
+          ]
+        },
+        {
+          "name": "Network & Routing",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "CloseRouter",
+              "url": "https://www.closerouter.com/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Cobalt Tools",
+              "url": "https://cobalt.tools/",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Visual Subnet Calculator",
+              "url": "https://visualsubnetcalc.com/",
+              "imageUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Utilities & Miscellaneous",
+      "icon": "Folder",
+      "subCategories": [
+        {
+          "name": "Utility Tools",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "TinyWow",
+              "url": "https://tinywow.com/",
+              "imageUrl": ""
+            }
+          ]
+        },
+        {
+          "name": "Data Management",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Google Takeout",
+              "url": "https://takeout.google.com/u/2/?pli=1&amp;pageId=none",
+              "imageUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Documents & References",
+      "icon": "FileText",
+      "subCategories": [
+        {
+          "name": "Project Documents",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "College Website Creation (Scribd)",
+              "url": "https://www.scribd.com/document/108482080/College-Website-Creation",
+              "imageUrl": ""
+            },
+            {
+              "iconUrl": "",
+              "name": "Project Document (Google Docs)",
+              "url": "https://docs.google.com/document/d/10ErN5NARF6nwuRBy9V3HEMKD0OjBWjh5/mobilebasic?fbclid=PAT01DUANIOWJleHRuA2FlbQIxMAABp_zgcs6XiCiIm3npasCWfSd8PWnJBfiHQLW2mFvGDQIn9p220ZdL_Khs-YTS_aem_GT-Or9er3mRzNjN-rf_sVQ",
+              "imageUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Inspiration & Showcase",
+      "icon": "PaintBrush",
+      "subCategories": [
+        {
+          "name": "Design Case Studies",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Behance – Restaurant Admin Dashboard",
+              "url": "https://www.behance.net/gallery/171793989/Streamlining-Restaurant-Operations-%28Admin-Dashboard%29",
+              "imageUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Other / Uncategorized",
+      "icon": "Folder",
+      "subCategories": [
+        {
+          "name": "Miscellaneous",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Srbija Sans",
+              "url": "https://www.srbijasans.rs/",
+              "imageUrl": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

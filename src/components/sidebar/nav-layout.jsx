@@ -17,12 +17,13 @@ import {
 } from "@/components/ui/sidebar";
 
 export function NavSidebarLayout() {
-  const menuItems = Object.entries(resources).map(([title, data]) => ({
-    title,
+  // Convert categories array to menu items
+  const menuItems = resources.categories.map((category) => ({
+    title: category.name,
     url: `/resources/${encodeURIComponent(
-      title.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-")
+      category.name.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-")
     )}`,
-    icon: Icons[data.icon] || Icons.Folder,
+    icon: Icons[category.icon] || Icons.Folder,
   }));
 
   // Bottom group items
@@ -66,7 +67,7 @@ export function NavSidebarLayout() {
               {bottomItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild tooltip={item.title}>
-                    <a href={item.url} >
+                    <a href={item.url}>
                       <item.icon />
                       <span>{item.title}</span>
                     </a>

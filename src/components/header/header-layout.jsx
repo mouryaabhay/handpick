@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";
-import { githubRepoURL } from "@/constant/global";
+import { githubRepoURL, githubRepo } from "@/constant/global";
+import { GitHubStars } from "@/utils/github-stars";
 
 export function SiteHeader() {
   return (
@@ -14,7 +15,7 @@ export function SiteHeader() {
           className="mx-2 data-[orientation=vertical]:h-4"
         />
 
-        <h1 className="text-base font-medium">Reources</h1>
+        <h1 className="text-base font-medium">Resources</h1>
 
         <div className="ml-auto flex items-center gap-2">
           <Button
@@ -29,8 +30,8 @@ export function SiteHeader() {
               target="_blank"
               className="dark:text-foreground"
             >
-              <img height="16" width="16" src="src/assets/github.svg" />
-              GitHub
+              <img height="16" width="16" src="src/assets/github.svg" alt="GitHub" />
+              <GitHubStars owner={githubRepo.owner} repo={githubRepo.repo} />
             </a>
           </Button>
         </div>
