@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import * as Icons from "lucide-react";
 
-import resources from "@/data/resources.json";
 import { NavSidebarHeader } from "./nav-sidebar-header";
 import { NavSidebarFooter } from "./nav-sidebar-footer";
 
@@ -16,8 +16,28 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 
+const RESOURCES_URL =
+  "https://raw.githubusercontent.com/mouryaabhay/handpicked/refs/heads/main/src/data/resources.json";
+
 export function NavSidebarLayout() {
-  // Convert categories array to menu items
+  const [resources, setResources] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    axios
+      .get(RESOURCES_URL)
+      .then((response) => {
+        setResources(response.data);
+      })
+      .catch((err) => {
+        console.error("Failed to load resources:", err);
+      })
+      .finally(() => setLoading(false));
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
+  if (!resources) return <div>Failed to load resources</div>;
+
   const menuItems = resources.categories.map((category) => ({
     title: category.name,
     url: `/resources/${encodeURIComponent(
@@ -26,7 +46,6 @@ export function NavSidebarLayout() {
     icon: Icons[category.icon] || Icons.Folder,
   }));
 
-  // Bottom group items
   const bottomItems = [
     { title: "Search", url: "/search", icon: Icons.Search },
     { title: "Settings", url: "/settings", icon: Icons.Settings },
@@ -34,10 +53,8 @@ export function NavSidebarLayout() {
 
   return (
     <Sidebar collapsible="icon">
-      {/* Header */}
       <NavSidebarHeader />
 
-      {/* Main scrollable content */}
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Resources</SidebarGroupLabel>
@@ -58,7 +75,6 @@ export function NavSidebarLayout() {
         </SidebarGroup>
       </SidebarContent>
 
-      {/* Bottom group */}
       <div className="mt-auto">
         <SidebarGroup>
           <SidebarGroupLabel>Quick Actions</SidebarGroupLabel>
@@ -78,7 +94,6 @@ export function NavSidebarLayout() {
           </SidebarGroupContent>
         </SidebarGroup>
 
-        {/* Footer */}
         <NavSidebarFooter />
       </div>
     </Sidebar>
