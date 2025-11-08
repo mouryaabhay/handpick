@@ -1,6 +1,6 @@
 import { Sparkles } from "lucide-react";
 
-import { SidebarFooter, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "../ui/sidebar";
+import { SidebarFooter, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "@/components/ui/sidebar";
 
 export function NavSidebarFooter() {
   return (

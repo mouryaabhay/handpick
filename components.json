@@ -14,7 +14,9 @@
   "aliases": {
     "assets": "@/assets",
     "components": "@/components",
-    "constnats": "@/constants",
+    "constants": "@/constants",
+    "contexts": "@/contexts",
+    "data": "@/data",
     "utils": "@/lib/utils",
     "ui": "@/components/ui",
     "lib": "@/lib",

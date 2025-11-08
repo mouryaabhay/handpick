@@ -6,15 +6,25 @@ export function GitHubStars({ owner, repo }) {
 
   useEffect(() => {
     async function fetchStars() {
-      try {
-        const baseUrl = process.env.REACT_APP_GITHUB_API; // notice REACT_APP_
-        if (!baseUrl) throw new Error("REACT_APP_GITHUB_API is not defined");
+      const cacheKey = `stars_${owner}_${repo}`;
+      const cached = localStorage.getItem(cacheKey);
 
-        const res = await axios.get(`${baseUrl}/repos/${owner}/${repo}`);
+      if (cached) {
+        setStars(Number(cached));
+        return;
+      }
+
+      try {
+        const baseUrl = import.meta.env.VITE_GITHUB_API;
+        if (!baseUrl) throw new Error("VITE_GITHUB_API is not defined");
+
+        const res = await axios.get(baseUrl);
         const data = res.data;
 
         if (data && typeof data.stargazers_count === "number") {
-          setStars(data.stargazers_count);
+          const count = data.stargazers_count;
+          setStars(count);
+          localStorage.setItem(cacheKey, count);
         } else {
           setStars("GitHub");
         }
@@ -26,7 +36,11 @@ export function GitHubStars({ owner, repo }) {
 
     fetchStars();
 
-    const interval = setInterval(fetchStars, 3600 * 1000); // refresh every 1 hour
+    const interval = setInterval(() => {
+      localStorage.removeItem(`stars_${owner}_${repo}`);
+      fetchStars();
+    }, 3600 * 1000); // refresh every 1 hour
+
     return () => clearInterval(interval);
   }, [owner, repo]);
 
