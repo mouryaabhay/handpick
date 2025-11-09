@@ -3,7 +3,6 @@ import * as Icons from "lucide-react";
 import { Sidebar, SidebarContent } from "@/components/ui/sidebar";
 import { ResourceContext } from "@/contexts/ContextHub";
 import { NavSidebarHeader } from "./nav-sidebar-header";
-import { NavSidebarFooter } from "./nav-sidebar-footer";
 import NavSidebarSection from "./nav-sidebar-section";
 import NavSidebarMenu from "./nav-sidebar-menu";
 
@@ -15,7 +14,7 @@ function NavSidebarLayout() {
   }
 
   const formatUrl = (name) =>
-    `/resources/${encodeURIComponent(
+    `/${encodeURIComponent(
       name.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-")
     )}`;
 
@@ -30,12 +29,11 @@ function NavSidebarLayout() {
       <NavSidebarHeader />
 
       <SidebarContent className="overflow-x-hidden">
-        <NavSidebarSection title="Resources">
+        <NavSidebarSection>
           <NavSidebarMenu items={menuItems} />
         </NavSidebarSection>
       </SidebarContent>
 
-      <NavSidebarFooter />
     </Sidebar>
   );
 }
