@@ -1,177 +1,28 @@
 {
   "categories": [
     {
-      "name": "Hosting",
-      "icon": "Server",
+      "name": "AI",
+      "icon": "BrainCircuit",
       "subCategories": [
         {
-          "name": "Hosting & Client Dashboards",
+          "name": "AI Platforms",
           "resources": [
             {
               "iconUrl": "",
-              "name": "Galactic Hosting Client",
-              "url": "https://client.galactichosting.net/",
-              "imageUrl": "https://picsum.photos/300"
-            }
-          ]
-        },
-        {
-          "name": "Databases",
-          "resources": [
-            {
-              "iconUrl": "",
-              "name": "MongoDB Cloud",
-              "url": "https://cloud.mongodb.com/",
-              "imageUrl": "https://picsum.photos/300"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Design",
-      "icon": "PencilRuler",
-      "subCategories": [
-        {
-          "name": "CSS Design & Guidelines",
-          "resources": [
-            {
-              "iconUrl": "",
-              "name": "CSS Tricks - Shapes of CSS",
-              "url": "https://css-tricks.com/the-shapes-of-css/#aa-trapezoid-shape",
+              "name": "Google AI Studio",
+              "url": "https://aistudio.google.com/",
               "imageUrl": "https://picsum.photos/300"
             },
             {
               "iconUrl": "",
-              "name": "CSS Guidelines",
-              "url": "https://cssguidelin.es/",
+              "name": "OpenRouter",
+              "url": "https://openrouter.ai/",
               "imageUrl": "https://picsum.photos/300"
             },
             {
               "iconUrl": "",
-              "name": "CSS Protips (GitHub)",
-              "url": "https://github.com/AllThingsSmitty/css-protips?tab=readme-ov-file#use-a-css-reset",
-              "imageUrl": "https://picsum.photos/300"
-            }
-          ]
-        },
-        {
-          "name": "Layout & Pattern Generators",
-          "resources": [
-            {
-              "iconUrl": "",
-              "name": "Grid Layout Generator",
-              "url": "https://gridlayoutgenerator.com/",
-              "imageUrl": "https://picsum.photos/300"
-            },
-            {
-              "iconUrl": "",
-              "name": "CSS Pattern",
-              "url": "https://css-pattern.com/",
-              "imageUrl": "https://picsum.photos/300"
-            },
-            {
-              "iconUrl": "",
-              "name": "Pattern Craft",
-              "url": "https://patterncraft.fun/",
-              "imageUrl": "https://picsum.photos/300"
-            },
-            {
-              "iconUrl": "",
-              "name": "Clamp Calculator",
-              "url": "https://geary.co/clamp-calculator/",
-              "imageUrl": "https://picsum.photos/300"
-            }
-          ]
-        },
-        {
-          "name": "Animation Tools",
-          "resources": [
-            {
-              "iconUrl": "",
-              "name": "Animista",
-              "url": "https://animista.net/",
-              "imageUrl": "https://picsum.photos/300"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Frameworks",
-      "icon": "Layers",
-      "subCategories": [
-        {
-          "name": "UI Libraries",
-          "resources": [
-            {
-              "iconUrl": "",
-              "name": "shadcn/ui",
-              "url": "https://ui.shadcn.com/",
-              "imageUrl": "https://picsum.photos/300"
-            },
-            {
-              "iconUrl": "",
-              "name": "Uiverse",
-              "url": "https://uiverse.io/",
-              "imageUrl": "https://picsum.photos/300"
-            },
-            {
-              "iconUrl": "",
-              "name": "StackSorted Buttons",
-              "url": "https://stacksorted.com/buttons",
-              "imageUrl": "https://picsum.photos/300"
-            }
-          ]
-        },
-        {
-          "name": "UI Kits & Resources",
-          "resources": [
-            {
-              "iconUrl": "",
-              "name": "Frames for Sketch",
-              "url": "https://framesforsketch.com/",
-              "imageUrl": "https://picsum.photos/300"
-            },
-            {
-              "iconUrl": "",
-              "name": "Checklist Design",
-              "url": "https://www.checklist.design/",
-              "imageUrl": "https://picsum.photos/300"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Icons",
-      "icon": "Image",
-      "subCategories": [
-        {
-          "name": "Icon Libraries",
-          "resources": [
-            {
-              "iconUrl": "",
-              "name": "IconBuddy",
-              "url": "https://iconbuddy.com/search?q=menu",
-              "imageUrl": "https://picsum.photos/300"
-            },
-            {
-              "iconUrl": "",
-              "name": "Iconists Central",
-              "url": "https://iconists.co/central?aff=WW8vV#the-grid",
-              "imageUrl": "https://picsum.photos/300"
-            },
-            {
-              "iconUrl": "",
-              "name": "Isocons",
-              "url": "https://www.isocons.app/",
-              "imageUrl": "https://picsum.photos/300"
-            },
-            {
-              "iconUrl": "",
-              "name": "IconScout Unicons",
-              "url": "https://iconscout.com/unicons/free-line-icons/arrow",
+              "name": "Teachable Machine",
+              "url": "https://teachablemachine.withgoogle.com/",
               "imageUrl": "https://picsum.photos/300"
             }
           ]
@@ -187,8 +38,8 @@
           "resources": [
             {
               "iconUrl": "",
-              "name": "Tints & Shades Generator",
-              "url": "https://tintsshades.netlify.app/",
+              "name": "Accessible Palette",
+              "url": "https://accessiblepalette.com/",
               "imageUrl": "https://picsum.photos/300"
             },
             {
@@ -199,8 +50,8 @@
             },
             {
               "iconUrl": "",
-              "name": "Accessible Palette",
-              "url": "https://accessiblepalette.com/",
+              "name": "Tints & Shades Generator",
+              "url": "https://tintsshades.netlify.app/",
               "imageUrl": "https://picsum.photos/300"
             }
           ]
@@ -230,6 +81,149 @@
               "iconUrl": "",
               "name": "Topography Generator",
               "url": "https://topography.blixthalka.com/",
+              "imageUrl": "https://picsum.photos/300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Design",
+      "icon": "PencilRuler",
+      "subCategories": [
+        {
+          "name": "Animation Tools",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Animista",
+              "url": "https://animista.net/",
+              "imageUrl": "https://picsum.photos/300"
+            }
+          ]
+        },
+        {
+          "name": "CSS Design & Guidelines",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "CSS Guidelines",
+              "url": "https://cssguidelin.es/",
+              "imageUrl": "https://picsum.photos/300"
+            },
+            {
+              "iconUrl": "",
+              "name": "CSS Protips (GitHub)",
+              "url": "https://github.com/AllThingsSmitty/css-protips?tab=readme-ov-file#use-a-css-reset",
+              "imageUrl": "https://picsum.photos/300"
+            },
+            {
+              "iconUrl": "",
+              "name": "CSS Tricks - Shapes of CSS",
+              "url": "https://css-tricks.com/the-shapes-of-css/#aa-trapezoid-shape",
+              "imageUrl": "https://picsum.photos/300"
+            }
+          ]
+        },
+        {
+          "name": "Layout & Pattern Generators",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Clamp Calculator",
+              "url": "https://geary.co/clamp-calculator/",
+              "imageUrl": "https://picsum.photos/300"
+            },
+            {
+              "iconUrl": "",
+              "name": "CSS Pattern",
+              "url": "https://css-pattern.com/",
+              "imageUrl": "https://picsum.photos/300"
+            },
+            {
+              "iconUrl": "",
+              "name": "Grid Layout Generator",
+              "url": "https://gridlayoutgenerator.com/",
+              "imageUrl": "https://picsum.photos/300"
+            },
+            {
+              "iconUrl": "",
+              "name": "Pattern Craft",
+              "url": "https://patterncraft.fun/",
+              "imageUrl": "https://picsum.photos/300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Development",
+      "icon": "Code",
+      "subCategories": [
+        {
+          "name": "APIs & Developer Resources",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Free for Dev",
+              "url": "https://free-for.dev/#/",
+              "imageUrl": "https://picsum.photos/300"
+            },
+            {
+              "iconUrl": "",
+              "name": "Public APIs",
+              "url": "https://publicapis.dev/",
+              "imageUrl": "https://picsum.photos/300"
+            }
+          ]
+        },
+        {
+          "name": "Browser & Debugging Tools",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Eruda Debug Console",
+              "url": "https://eruda.liriliri.io/",
+              "imageUrl": "https://picsum.photos/300"
+            }
+          ]
+        },
+        {
+          "name": "Code Experiments",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Animated Button (CodePen)",
+              "url": "https://codepen.io/JoseRosario/pen/BWqMwK?editors=0100",
+              "imageUrl": "https://picsum.photos/300"
+            },
+            {
+              "iconUrl": "",
+              "name": "CSS Menu Experiment (CodePen)",
+              "url": "https://codepen.io/kjbrum/pen/wBBLXx?editors=0100",
+              "imageUrl": "https://picsum.photos/300"
+            }
+          ]
+        },
+        {
+          "name": "Developer Roadmaps & Guides",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Full Stack Roadmap",
+              "url": "https://roadmap.sh/full-stack",
+              "imageUrl": "https://picsum.photos/300"
+            },
+            {
+              "iconUrl": "",
+              "name": "Markdown Cheatsheet",
+              "url": "https://github.com/lifeparticle/Markdown-Cheatsheet",
+              "imageUrl": "https://picsum.photos/300"
+            },
+            {
+              "iconUrl": "",
+              "name": "Web Development Resources (GitHub)",
+              "url": "https://github.com/markodenic/web-development-resources",
               "imageUrl": "https://picsum.photos/300"
             }
           ]
@@ -272,34 +266,22 @@
       ]
     },
     {
-      "name": "Typography",
-      "icon": "Type",
+      "name": "Documents",
+      "icon": "FileText",
       "subCategories": [
         {
-          "name": "Font Resources",
+          "name": "Project Documents",
           "resources": [
             {
               "iconUrl": "",
-              "name": "Fontshare - Switzer",
-              "url": "https://www.fontshare.com/fonts/switzer",
+              "name": "College Website Creation (Scribd)",
+              "url": "https://www.scribd.com/document/108482080/College-Website-Creation",
               "imageUrl": "https://picsum.photos/300"
             },
             {
               "iconUrl": "",
-              "name": "Fontshare - Satoshi",
-              "url": "https://www.fontshare.com/fonts/satoshi",
-              "imageUrl": "https://picsum.photos/300"
-            },
-            {
-              "iconUrl": "",
-              "name": "Google Fonts - Manrope",
-              "url": "https://fonts.google.com/specimen/Manrope",
-              "imageUrl": "https://picsum.photos/300"
-            },
-            {
-              "iconUrl": "",
-              "name": "Google Fonts - Atkinson Hyperlegible",
-              "url": "https://fonts.google.com/specimen/Atkinson+Hyperlegible",
+              "name": "Project Document (Google Docs)",
+              "url": "https://docs.google.com/document/d/10ErN5NARF6nwuRBy9V3HEMKD0OjBWjh5/mobilebasic",
               "imageUrl": "https://picsum.photos/300"
             }
           ]
@@ -307,73 +289,45 @@
       ]
     },
     {
-      "name": "Development",
-      "icon": "Code",
+      "name": "Frameworks",
+      "icon": "Layers",
       "subCategories": [
         {
-          "name": "Developer Roadmaps & Guides",
+          "name": "UI Kits & Resources",
           "resources": [
             {
               "iconUrl": "",
-              "name": "Full Stack Roadmap",
-              "url": "https://roadmap.sh/full-stack",
+              "name": "Checklist Design",
+              "url": "https://www.checklist.design/",
               "imageUrl": "https://picsum.photos/300"
             },
             {
               "iconUrl": "",
-              "name": "Web Development Resources (GitHub)",
-              "url": "https://github.com/markodenic/web-development-resources",
-              "imageUrl": "https://picsum.photos/300"
-            },
-            {
-              "iconUrl": "",
-              "name": "Markdown Cheatsheet",
-              "url": "https://github.com/lifeparticle/Markdown-Cheatsheet",
+              "name": "Frames for Sketch",
+              "url": "https://framesforsketch.com/",
               "imageUrl": "https://picsum.photos/300"
             }
           ]
         },
         {
-          "name": "Code Experiments",
+          "name": "UI Libraries",
           "resources": [
             {
               "iconUrl": "",
-              "name": "CSS Menu Experiment (CodePen)",
-              "url": "https://codepen.io/kjbrum/pen/wBBLXx?editors=0100",
+              "name": "StackSorted Buttons",
+              "url": "https://stacksorted.com/buttons",
               "imageUrl": "https://picsum.photos/300"
             },
             {
               "iconUrl": "",
-              "name": "Animated Button (CodePen)",
-              "url": "https://codepen.io/JoseRosario/pen/BWqMwK?editors=0100",
-              "imageUrl": "https://picsum.photos/300"
-            }
-          ]
-        },
-        {
-          "name": "Browser & Debugging Tools",
-          "resources": [
-            {
-              "iconUrl": "",
-              "name": "Eruda Debug Console",
-              "url": "https://eruda.liriliri.io/",
-              "imageUrl": "https://picsum.photos/300"
-            }
-          ]
-        },
-        {
-          "name": "APIs & Developer Resources",
-          "resources": [
-            {
-              "iconUrl": "",
-              "name": "Public APIs",
-              "url": "https://publicapis.dev/",
+              "name": "Uiverse",
+              "url": "https://uiverse.io/",
               "imageUrl": "https://picsum.photos/300"
             },
             {
               "iconUrl": "",
-              "name": "Free for Dev",
-              "url": "https://free-for.dev/#/",
+              "name": "shadcn/ui",
+              "url": "https://ui.shadcn.com/",
               "imageUrl": "https://picsum.photos/300"
             }
           ]
@@ -381,28 +335,96 @@
       ]
     },
     {
-      "name": "AI",
-      "icon": "BrainCircuit",
+      "name": "Hosting",
+      "icon": "Server",
       "subCategories": [
         {
-          "name": "AI Platforms",
+          "name": "Databases",
           "resources": [
             {
               "iconUrl": "",
-              "name": "OpenRouter",
-              "url": "https://openrouter.ai/",
+              "name": "MongoDB Cloud",
+              "url": "https://cloud.mongodb.com/",
+              "imageUrl": "https://picsum.photos/300"
+            }
+          ]
+        },
+        {
+          "name": "Hosting & Client Dashboards",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Galactic Hosting Client",
+              "url": "https://client.galactichosting.net/",
+              "imageUrl": "https://picsum.photos/300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Icons",
+      "icon": "Image",
+      "subCategories": [
+        {
+          "name": "Icon Libraries",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "IconBuddy",
+              "url": "https://iconbuddy.com/search?q=menu",
               "imageUrl": "https://picsum.photos/300"
             },
             {
               "iconUrl": "",
-              "name": "Google AI Studio",
-              "url": "https://aistudio.google.com/",
+              "name": "IconScout Unicons",
+              "url": "https://iconscout.com/unicons/free-line-icons/arrow",
               "imageUrl": "https://picsum.photos/300"
             },
             {
               "iconUrl": "",
-              "name": "Teachable Machine",
-              "url": "https://teachablemachine.withgoogle.com/",
+              "name": "Iconists Central",
+              "url": "https://iconists.co/central?aff=WW8vV#the-grid",
+              "imageUrl": "https://picsum.photos/300"
+            },
+            {
+              "iconUrl": "",
+              "name": "Isocons",
+              "url": "https://www.isocons.app/",
+              "imageUrl": "https://picsum.photos/300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Inspiration",
+      "icon": "Sparkles",
+      "subCategories": [
+        {
+          "name": "Design Case Studies",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Behance – Restaurant Admin Dashboard",
+              "url": "https://www.behance.net/gallery/171793989/Streamlining-Restaurant-Operations-%28Admin-Dashboard%29",
+              "imageUrl": "https://picsum.photos/300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Misc",
+      "icon": "Archive",
+      "subCategories": [
+        {
+          "name": "Other Resources",
+          "resources": [
+            {
+              "iconUrl": "",
+              "name": "Srbija Sans",
+              "url": "https://www.srbijasans.rs/",
               "imageUrl": "https://picsum.photos/300"
             }
           ]
@@ -450,20 +472,44 @@
       ]
     },
     {
-      "name": "Utilities",
-      "icon": "Wrench",
+      "name": "Typography",
+      "icon": "Type",
       "subCategories": [
         {
-          "name": "Utility Tools",
+          "name": "Font Resources",
           "resources": [
             {
               "iconUrl": "",
-              "name": "TinyWow",
-              "url": "https://tinywow.com/",
+              "name": "Fontshare - Satoshi",
+              "url": "https://www.fontshare.com/fonts/satoshi",
+              "imageUrl": "https://picsum.photos/300"
+            },
+            {
+              "iconUrl": "",
+              "name": "Fontshare - Switzer",
+              "url": "https://www.fontshare.com/fonts/switzer",
+              "imageUrl": "https://picsum.photos/300"
+            },
+            {
+              "iconUrl": "",
+              "name": "Google Fonts - Atkinson Hyperlegible",
+              "url": "https://fonts.google.com/specimen/Atkinson+Hyperlegible",
+              "imageUrl": "https://picsum.photos/300"
+            },
+            {
+              "iconUrl": "",
+              "name": "Google Fonts - Manrope",
+              "url": "https://fonts.google.com/specimen/Manrope",
               "imageUrl": "https://picsum.photos/300"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Utilities",
+      "icon": "Wrench",
+      "subCategories": [
         {
           "name": "Data Management",
           "resources": [
@@ -474,60 +520,14 @@
               "imageUrl": "https://picsum.photos/300"
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "Documents",
-      "icon": "FileText",
-      "subCategories": [
+        },
         {
-          "name": "Project Documents",
+          "name": "Utility Tools",
           "resources": [
             {
               "iconUrl": "",
-              "name": "College Website Creation (Scribd)",
-              "url": "https://www.scribd.com/document/108482080/College-Website-Creation",
-              "imageUrl": "https://picsum.photos/300"
-            },
-            {
-              "iconUrl": "",
-              "name": "Project Document (Google Docs)",
-              "url": "https://docs.google.com/document/d/10ErN5NARF6nwuRBy9V3HEMKD0OjBWjh5/mobilebasic",
-              "imageUrl": "https://picsum.photos/300"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Inspiration",
-      "icon": "Sparkles",
-      "subCategories": [
-        {
-          "name": "Design Case Studies",
-          "resources": [
-            {
-              "iconUrl": "",
-              "name": "Behance – Restaurant Admin Dashboard",
-              "url": "https://www.behance.net/gallery/171793989/Streamlining-Restaurant-Operations-%28Admin-Dashboard%29",
-              "imageUrl": "https://picsum.photos/300"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Misc",
-      "icon": "Archive",
-      "subCategories": [
-        {
-          "name": "Other Resources",
-          "resources": [
-            {
-              "iconUrl": "",
-              "name": "Srbija Sans",
-              "url": "https://www.srbijasans.rs/",
+              "name": "TinyWow",
+              "url": "https://tinywow.com/",
               "imageUrl": "https://picsum.photos/300"
             }
           ]

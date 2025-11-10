@@ -5,12 +5,15 @@ import { ResourceProviderContext } from "@/contexts/resource-context";
 import { NavSidebarHeader } from "./nav-sidebar-header";
 import NavSidebarSection from "./nav-sidebar-section";
 import NavSidebarMenu from "./nav-sidebar-menu";
+import { NavSidebarFooter } from "./nav-sidebar-footer";
 
 function NavSidebarLayout() {
   const resources = useContext(ResourceProviderContext);
 
   if (!resources?.categories?.length) {
-    return <div className="m-2 text-muted-foreground">No resources available</div>;
+    return (
+      <div className="m-2 text-muted-foreground">No resources available</div>
+    );
   }
 
   const formatUrl = (name) =>
@@ -34,6 +37,7 @@ function NavSidebarLayout() {
         </NavSidebarSection>
       </SidebarContent>
 
+      <NavSidebarFooter />
     </Sidebar>
   );
 }

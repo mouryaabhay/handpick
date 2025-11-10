@@ -43,7 +43,7 @@ export default function HomePage() {
               Browse Resources
             </Button>
             <Button size="sm" variant="secondary" onClick={handleOpenForm}>
-              Add Resource
+              Submit Resource
             </Button>
           </div>
         </div>
