@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
   SidebarMenu,
   SidebarMenuButton,
@@ -7,17 +6,31 @@ import {
 } from "@/components/ui/sidebar";
 
 function NavSidebarMenu({ items = [] }) {
+  const handleClick = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <SidebarMenu>
       {items.map((item) => {
         const IconComponent = item.icon;
+        // convert title to match section id
+        const sectionId = item.title.toLowerCase().replace(/\s+/g, "-");
+
         return (
           <SidebarMenuItem key={item.title}>
-            <SidebarMenuButton asChild tooltip={item.title}>
-              <Link to={item.url} aria-label={item.title}>
+            <SidebarMenuButton
+              asChild
+              tooltip={item.title}
+              onClick={() => handleClick(sectionId)}
+            >
+              <button aria-label={item.title} className="flex items-center gap-2">
                 <IconComponent />
                 <span>{item.title}</span>
-              </Link>
+              </button>
             </SidebarMenuButton>
           </SidebarMenuItem>
         );
