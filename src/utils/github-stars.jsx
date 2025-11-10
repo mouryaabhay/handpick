@@ -1,47 +1,38 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import axios from "axios";
 
-export function GitHubStars({ owner, repo }) {
-  const [stars, setStars] = useState("GitHub");
+export function GitHubStars({ repoOwner, repoName }) {
+  const [stars, setStars] = useState(null);
 
-  useEffect(() => {
-    async function fetchStars() {
-      const cacheKey = `stars_${owner}_${repo}`;
-      const cached = localStorage.getItem(cacheKey);
+  const cacheKey = `github_stars_${repoOwner}_${repoName}`;
+  const apiEndpoint = `https://api.github.com/repos/${repoOwner}/${repoName}`;
 
-      if (cached) {
-        setStars(Number(cached));
-        return;
+  const fetchStars = useCallback(
+    async (refresh = false) => {
+      if (!refresh) {
+        const cachedStars = localStorage.getItem(cacheKey);
+        if (cachedStars) return setStars(+cachedStars);
       }
 
       try {
-        // Expect VITE_GITHUB_API to be the API root (e.g. https://api.github.com/repos)
-        const apiRoot = (import.meta.env.VITE_GITHUB_API || "https://api.github.com/repos").replace(/\/$/, "");
-        const res = await axios.get(`${apiRoot}/${owner}/${repo}`);
-        const data = res.data;
-
-        if (data && typeof data.stargazers_count === "number") {
-          const count = data.stargazers_count;
+        const { data } = await axios.get(apiEndpoint);
+        const count = data?.stargazers_count;
+        if (typeof count === "number") {
           setStars(count);
           localStorage.setItem(cacheKey, count);
-        } else {
-          setStars("GitHub");
         }
       } catch (err) {
-        console.error("Failed to fetch GitHub stars:", err);
-        setStars("GitHub");
+        console.error("GitHub stars fetch failed:", err);
       }
-    }
+    },
+    [cacheKey, apiEndpoint]
+  );
 
+  useEffect(() => {
     fetchStars();
-
-    const interval = setInterval(() => {
-      localStorage.removeItem(`stars_${owner}_${repo}`);
-      fetchStars();
-    }, 3600 * 1000); // refresh every 1 hour
-
+    const interval = setInterval(() => fetchStars(true), 86400000);
     return () => clearInterval(interval);
-  }, [owner, repo]);
+  }, [fetchStars]);
 
-  return <>{typeof stars === "number" ? stars.toLocaleString() : stars}</>;
+  return <>{stars?.toLocaleString() ?? "GitHub"}</>;
 }

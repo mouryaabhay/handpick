@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ThemeProviderContext } from "@/contexts/theme-context";
 
-export function ThemeProvider({
+export default function ThemeProvider({
   children,
   defaultTheme = "system",
   storageKey = "vite-ui-theme",

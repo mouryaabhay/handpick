@@ -1,10 +1,10 @@
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 import NavSidebar from "@/components/sidebar/nav-sidebar";
-import { AppHeader } from "@/components/header/header-layout";
+import AppHeader from "@/components/header/header-layout";
 import ResourceProvider from "@/providers/resource-provider";
 import PageRoutes from "@/pages/PageRoutes";
-import { ThemeProvider } from "@/providers/theme-provider";
+import ThemeProvider from "@/providers/theme-provider";
 
 function App() {
   return (

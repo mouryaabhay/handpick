@@ -3,10 +3,10 @@ import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
 import HeaderCurrentSection from "./header-current-section";
 import HeaderSearchbar from "./header-searchbar";
-import HeaderGitHubStars from "./header-githubstar";
+import HeaderGitHubButton from "./header-githubstar";
 import { ThemeToggle } from "@/components/themes/theme-toggle";
 
-export function AppHeader() {
+export default function AppHeader() {
   return (
     <header className="flex justify-between py-2 h-(--header-height) shrink-0 items-center gap-2 border-b px-4 lg:px-6">
       <div className="flex items-center gap-2 h-full">
@@ -22,7 +22,7 @@ export function AppHeader() {
 
         <Separator orientation="vertical" className="mx-2 h-1" />
 
-        <HeaderGitHubStars />
+        <HeaderGitHubButton />
 
         <Separator orientation="vertical" className="mx-2 h-1" />
 
