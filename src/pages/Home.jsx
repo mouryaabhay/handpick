@@ -3,6 +3,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import ResourcesList from "@/components/resources/resources-list";
+import Searchbar from "@/components/other/searchbar";
 
 export default function HomePage() {
   const handleScrollToResources = () => {
@@ -57,7 +58,8 @@ export default function HomePage() {
       </section>
 
       {/* Resources Section */}
-      <div id="resources-section" className="px-6 sm:px-12 lg:px-20">
+      <div id="resources-section" className="flex flex-col gap-4 px-6 sm:px-12 lg:px-20">
+        <Searchbar />
         <ResourcesList />
       </div>
 
