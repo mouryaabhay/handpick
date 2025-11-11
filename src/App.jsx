@@ -13,13 +13,11 @@ function App() {
       <ThemeProvider>
         <BrowserRouter>
           <NavSidebar>
-            <div className="flex flex-col h-screen flex-1">
+            <main className="flex flex-col h-screen flex-1">
               <AppHeader />
-              <main>
-                <ThemedToaster />
-                <PageRoutes />
-              </main>
-            </div>
+              <ThemedToaster />
+              <PageRoutes />
+            </main>
           </NavSidebar>
         </BrowserRouter>
       </ThemeProvider>

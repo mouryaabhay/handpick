@@ -61,7 +61,7 @@ export default function HomePage() {
       </section>
 
       {/* Resources Section */}
-      <div id="resources-section" className="flex flex-col gap-4 p-6 sm:px-12 lg:px-20">
+      <div id="resources-section" className="flex flex-col gap-4 my-6 mx-14 sm:px-12 lg:px-20">
         <Searchbar />
         <ResourcesList />
       </div>

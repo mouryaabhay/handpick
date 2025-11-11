@@ -14,21 +14,22 @@ export function NavSidebarFooter() {
     <SidebarFooter className="border-t">
       <SidebarMenu>
         <SidebarMenuItem>
-          {/* About button (internal link, can remain same) */}
           <SidebarMenuButton
             asChild
-            tooltip="About - How come this site came to be?"
+            className="space-x-2"
+            tooltip="About - How this site came to be"
           >
             <Link to="/about">
               <User />
-              <span>
-                About
-              </span>
+              <span>About</span>
             </Link>
           </SidebarMenuButton>
 
-          {/* Github button (external link, opens in new tab) */}
-          <SidebarMenuButton asChild tooltip="@mouryaabhay (Github Profile)">
+          <SidebarMenuButton
+            asChild
+            className="space-x-2"
+            tooltip="@mouryaabhay (Github Profile)"
+          >
             <a
               href="https://github.com/mouryaabhay"
               target="_blank"
@@ -39,15 +40,13 @@ export function NavSidebarFooter() {
                 alt="GitHub"
                 className="h-4 w-4 invert-0 dark:invert transition-all"
               />
-              <span>
-                @mouryaabhay
-              </span>
+              <span>@mouryaabhay</span>
             </a>
           </SidebarMenuButton>
 
-          {/* Discord button (external link, opens in new tab) */}
           <SidebarMenuButton
             asChild
+            className="space-x-2"
             tooltip="Creation Guide (Discord Server)"
           >
             <a
@@ -60,9 +59,7 @@ export function NavSidebarFooter() {
                 alt="Discord"
                 className="h-4 w-4 invert-0 dark:invert transition-all"
               />
-              <span>
-                Creation Guide
-              </span>
+              <span>Creation Guide</span>
             </a>
           </SidebarMenuButton>
         </SidebarMenuItem>

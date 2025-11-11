@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useContext } from "react";
 import { ResourceProviderContext } from "@/contexts/resource-context";
 import { Separator } from "@/components/ui/separator";
@@ -28,18 +30,17 @@ export default function ResourcesList() {
 
             {/* Resource Cards */}
             <div className="flex flex-wrap gap-4 justify-start">
-              {category.subCategories.flatMap((subCategory) =>
-                subCategory.resources.map((resource) => (
-                  <ResourceCard
-                    key={resource.name}
-                    name={resource.name}
-                    url={resource.url}
-                    imageUrl={resource.imageUrl}
-                    subCategory={subCategory.name}
-                    className="flex-1 min-w-[200px] sm:min-w-[240px] md:min-w-[256px] max-w-xs"
-                  />
-                ))
-              )}
+              {category.tags.map((resource) => (
+                <ResourceCard
+                  key={resource.name}
+                  name={resource.name}
+                  url={resource.url}
+                  imageUrl={resource.imageUrl}
+                  // Previously `subCategory.name`, now each resource has its own `tags` array
+                  subCategory={resource.tags?.join(", ") || "General"}
+                  className="flex-1 min-w-[200px] sm:min-w-[240px] md:min-w-[256px] max-w-xs"
+                />
+              ))}
             </div>
           </div>
         );

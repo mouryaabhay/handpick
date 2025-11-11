@@ -12,7 +12,7 @@ export function NavSidebarHeader() {
     <SidebarHeader className="border-b">
       <SidebarMenu>
         <SidebarMenuItem>
-          <SidebarMenuButton asChild tooltip="Home">
+          <SidebarMenuButton asChild className="space-x-2" tooltip="Home">
             <Link to="/">
               <Boxes />
               <span className="font-semibold">Handpicked</span>
