@@ -2,15 +2,16 @@ import React, { useContext } from "react";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { Bookmark } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { BookmarksContext } from "@/contexts/bookmarks-context";
+import ResourceTags from "@/components/resources/resource-tags";
 
 export default function ResourceCard({
   name,
   url,
   imageUrl,
-  subCategory = "New",
+  tags = [],       // array of categorisation tags
+  badges = [],     // array of badges like "new", "featured", "popular"
   className = "",
 }) {
   const { addBookmark, removeBookmark, isBookmarked } = useContext(BookmarksContext);
@@ -22,7 +23,7 @@ export default function ResourceCard({
       removeBookmark(url);
       toast("Bookmark removed", { description: `${name} removed from favorites.` });
     } else {
-      addBookmark({ name, url, imageUrl, subCategory });
+      addBookmark({ name, url, imageUrl, tags, badges });
       toast("Bookmarked!", { description: `${name} added to favorites.` });
     }
   };
@@ -31,8 +32,13 @@ export default function ResourceCard({
     <Card className="relative rounded hover:shadow-lg transition-shadow cursor-pointer overflow-hidden gap-0 py-0">
       <a href={url} target="_blank" rel="noopener noreferrer" className={`block ${className}`}>
         {/* Image */}
-        <div className="aspect-[16/9] w-full overflow-hidden">
-          <img src={imageUrl} alt={name} className="w-full h-full object-cover bg-muted" loading="lazy" />
+        <div className="aspect-video w-full overflow-hidden">
+          <img
+            src={imageUrl}
+            alt={name}
+            className="w-full h-full object-cover bg-muted"
+            loading="lazy"
+          />
         </div>
 
         {/* Bookmark Button */}
@@ -56,12 +62,14 @@ export default function ResourceCard({
           </Button>
         </div>
 
+        {/* Title */}
         <CardContent className="px-4 mt-4 mb-2">
           <CardTitle className="text-base font-semibold">{name}</CardTitle>
         </CardContent>
 
+        {/* Tags / Badges */}
         <div className="px-4 pb-4 flex items-center justify-between">
-          <Badge variant="secondary" className="text-xs rounded-full">{subCategory}</Badge>
+          <ResourceTags tags={tags} badges={badges} />
         </div>
       </a>
     </Card>
