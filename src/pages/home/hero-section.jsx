@@ -4,12 +4,12 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Search, Shapes } from "lucide-react";
 import { handleScroll } from "@/utils/handle-scroll";
-import { googleFormURL } from "@/constant/global";
+import { GOOGLE_FORM_URL } from "@/constant/global";
 
 export default function HeroSection() {
   const handleOpenForm = () => {
     window.open(
-      googleFormURL,
+      GOOGLE_FORM_URL,
       "_blank"
     );
   };

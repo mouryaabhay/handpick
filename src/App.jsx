@@ -1,18 +1,18 @@
 import "./App.css";
+import ResourcesProvider from "@/providers/resources-provider";
+import BookmarksProvider from "./providers/bookmarks-provider";
+import ThemesProvider from "@/providers/themes-provider";
 import { BrowserRouter } from "react-router-dom";
 import NavSidebar from "@/components/sidebar/nav-sidebar";
 import AppHeader from "@/components/header/header-layout";
-import ResourcesProvider from "@/providers/resources-provider";
-import PageRoutes from "@/pages/PageRoutes";
-import ThemesProvider from "@/providers/themes-provider";
 import ThemedToaster from "@/components/other/themed-toaster";
-import { BookmarksProvider } from "./providers/bookmarks-provider";
+import PageRoutes from "@/pages/PageRoutes";
 
 function App() {
   return (
     <ResourcesProvider>
-      <ThemesProvider>
-        <BookmarksProvider>
+      <BookmarksProvider>
+        <ThemesProvider>
           <BrowserRouter>
             <NavSidebar>
               <div className="flex flex-col min-h-screen w-screen">
@@ -24,8 +24,8 @@ function App() {
               </div>
             </NavSidebar>
           </BrowserRouter>
-        </BookmarksProvider>
-      </ThemesProvider>
+        </ThemesProvider>
+      </BookmarksProvider>
     </ResourcesProvider>
   );
 }

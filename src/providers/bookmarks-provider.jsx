@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BookmarksContext } from "@/contexts/bookmarks-context";
 
-export function BookmarksProvider({ children }) {
+export default function BookmarksProvider({ children }) {
   const [bookmarks, setBookmarks] = useState([]);
 
   useEffect(() => {

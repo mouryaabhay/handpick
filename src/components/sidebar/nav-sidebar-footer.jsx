@@ -8,7 +8,7 @@ import {
   SidebarMenuButton,
 } from "@/components/ui/sidebar";
 import { Link } from "react-router-dom";
-import { handpickedProjectDetails } from "@/constant/global";
+import { DISCORD_INVITE_CODE, handpickedProjectDetails } from "@/constant/global";
 
 export default function NavSidebarFooter() {
   return (
@@ -51,7 +51,7 @@ export default function NavSidebarFooter() {
             tooltip="Creation Guide (Discord Server)"
           >
             <a
-              href="https://discord.gg/your-server-invite"
+              href={`https://discord.com/invite/${DISCORD_INVITE_CODE}`}
               target="_blank"
               rel="noopener noreferrer"
             >
