@@ -31,7 +31,6 @@ export default function NavSidebarMenu({ items = [] }) {
             <SidebarMenuButton asChild tooltip={title} className="space-x-2">
               <button
                 aria-label={title}
-                className="flex w-full items-center"
                 onClick={() => handleScroll(categoryId)}
               >
                 <Icon />

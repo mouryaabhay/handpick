@@ -36,7 +36,6 @@ export default function ResourcesList() {
                   name={resource.name}
                   url={resource.url}
                   imageUrl={resource.imageUrl}
-                  // Previously `subCategory.name`, now each resource has its own `tags` array
                   subCategory={resource.tags?.join(", ") || "General"}
                   className="flex-1 min-w-[200px] sm:min-w-[240px] md:min-w-[256px] max-w-xs"
                 />
