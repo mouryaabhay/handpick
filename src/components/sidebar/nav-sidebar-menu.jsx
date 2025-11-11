@@ -1,10 +1,6 @@
 import React, { useContext } from "react";
 import * as Icons from "lucide-react";
-import {
-  SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
-} from "@/components/ui/sidebar";
+import { SidebarMenu, SidebarMenuButton, SidebarMenuItem } from "@/components/ui/sidebar";
 import { handleScroll } from "@/utils/handle-scroll";
 import { BookmarksContext } from "@/contexts/bookmarks-context";
 
@@ -29,9 +25,7 @@ export default function NavSidebarMenu({ items = [] }) {
             <button onClick={() => handleScroll("favorites")}>
               <Icons.Star />
               <span>Favorites</span>
-              <span className="text-xs text-muted-foreground tabular-nums ml-auto">
-                {bookmarks.length}
-              </span>
+              <span className="text-xs text-muted-foreground tabular-nums ml-auto">{bookmarks.length}</span>
             </button>
           </SidebarMenuButton>
         </SidebarMenuItem>
@@ -46,17 +40,10 @@ export default function NavSidebarMenu({ items = [] }) {
         return (
           <SidebarMenuItem key={`${title}-${index}`}>
             <SidebarMenuButton asChild tooltip={title} className="space-x-2">
-              <button
-                aria-label={title}
-                onClick={() => handleScroll(categoryId)}
-              >
+              <button aria-label={title} onClick={() => handleScroll(categoryId)}>
                 <Icon />
                 <span>{title}</span>
-                {count > 0 && (
-                  <span className="text-xs text-muted-foreground tabular-nums ml-auto">
-                    {count}
-                  </span>
-                )}
+                {count > 0 && <span className="text-xs text-muted-foreground tabular-nums ml-auto">{count}</span>}
               </button>
             </SidebarMenuButton>
           </SidebarMenuItem>

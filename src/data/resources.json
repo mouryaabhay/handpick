@@ -18,7 +18,7 @@
           "url": "https://openrouter.ai/",
           "imageUrl": "https://picsum.photos/300",
           "tags": ["AI Platforms"],
-          "badges": []
+          "badges": ["new"]
         },
         {
           "iconUrl": "",
@@ -26,7 +26,7 @@
           "url": "https://www.closerouter.com/",
           "imageUrl": "https://picsum.photos/300",
           "tags": ["AI Platforms"],
-          "badges": []
+          "badges": ["new", "featured"]
         },
         {
           "iconUrl": "",
