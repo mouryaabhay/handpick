@@ -1,14 +1,14 @@
 import { useContext } from "react";
 import * as Icons from "lucide-react";
 import { Sidebar, SidebarContent } from "@/components/ui/sidebar";
-import { ResourceProviderContext } from "@/contexts/resource-context";
+import { ResourcesProviderContext } from "@/contexts/resources-context";
 import NavSidebarHeader from "./nav-sidebar-header";
 import NavSidebarGroup from "./nav-sidebar-group";
 import NavSidebarMenu from "./nav-sidebar-menu";
 import NavSidebarFooter from "./nav-sidebar-footer";
 
 export default function NavSidebarLayout() {
-  const resources = useContext(ResourceProviderContext);
+  const resources = useContext(ResourcesProviderContext);
   const categories = resources?.categories ?? [];
 
   const menuItems =

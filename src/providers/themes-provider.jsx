@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { ThemeProviderContext } from "@/contexts/theme-context";
+import { ThemesProviderContext } from "@/contexts/themes-context";
 
-export default function ThemeProvider({
+export default function ThemesProvider({
   children,
   defaultTheme = "system",
   storageKey = "vite-ui-theme",
@@ -36,8 +36,8 @@ export default function ThemeProvider({
   };
 
   return (
-    <ThemeProviderContext.Provider {...props} value={value}>
+    <ThemesProviderContext.Provider {...props} value={value}>
       {children}
-    </ThemeProviderContext.Provider>
+    </ThemesProviderContext.Provider>
   );
 }
