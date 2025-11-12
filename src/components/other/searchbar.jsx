@@ -37,7 +37,7 @@ export default function Searchbar({ value, onChange }) {
       </InputGroupAddon>
       <InputGroupAddon
         align="end"
-        className="flex items-center gap-1 text-sm text-muted-foreground mr-1.5"
+        className="hidden sm:flex items-center gap-1 text-sm text-muted-foreground mr-1.5"
       >
         <kbd className="border bg-muted py-1 px-2 text-xs font-semibold">/</kbd>
         <span className="text-xs text-muted-foreground">or</span>

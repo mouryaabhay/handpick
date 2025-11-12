@@ -17,7 +17,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero-section"
-      className="my-20 flex flex-col items-center justify-center mx-4 lg:mx-20 text-center"
+      className="my-20 flex flex-col items-center justify-center mx-4 sm:mx-8 lg:mx-20 text-center"
     >
       {/* Badge */}
       <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/10 px-3 py-1.5 text-sm font-medium text-green-600">
