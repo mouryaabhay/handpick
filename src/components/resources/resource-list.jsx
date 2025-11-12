@@ -41,31 +41,38 @@ export default function ResourcesList({ query = "" }) {
   if (!allCategories.length) return <p>No resources found.</p>;
 
   return (
-    <div className="space-y-8">
+    <div className="flex flex-col gap-4">
       {allCategories.map((category) => {
         const categoryId = category.name.toLowerCase().replace(/\s+/g, "-");
 
         return (
-          <div key={category.name} id={categoryId} className="space-y-4 p-6 scroll-mt-20">
-            <div className="flex items-center gap-4 px-0 justify-start w-full">
-              <h1 className="text-2xl font-bold truncate">{category.name}</h1>
+          <section
+            key={category.name}
+            id={categoryId}
+            className="flex flex-col gap-8 py-4 px-8"
+          >
+            {/* Header */}
+            <div className="flex items-center gap-4 justify-start w-full">
+              <h2 className="text-2xl font-bold truncate">{category.name}</h2>
               <Separator className="flex-1" />
             </div>
 
-            <div className="flex flex-wrap gap-4 justify-start">
+            {/* Cards grid */}
+            <ul className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
               {category.tags.map((resource) => (
-                <ResourceCard
-                key={resource.url}
-                name={resource.name}
-                url={resource.url}
-                imageUrl={resource.imageUrl}
-                tags={resource.tags || []}
-                badges={resource.badges || []}
-                className="flex-1 min-w-[200px] sm:min-w-60 md:min-w-64 max-w-xs"
-              />
+                <li key={resource.url}>
+                  <ResourceCard
+                    name={resource.name}
+                    url={resource.url}
+                    imageUrl={resource.imageUrl}
+                    tags={resource.tags || []}
+                    badges={resource.badges || []}
+                    className="w-full" // Card takes full width of the grid cell
+                  />
+                </li>
               ))}
-            </div>
-          </div>
+            </ul>
+          </section>
         );
       })}
     </div>

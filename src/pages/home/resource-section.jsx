@@ -34,7 +34,7 @@ export default function ResourcesSection() {
   return (
     <div
       id="resources-section"
-      className="flex flex-col gap-4 my-6 mx-6 lg:mx-24"
+      className="flex flex-col gap-4 m-6 lg:mx-24"
     >
       <Searchbar value={query} onChange={setQuery} scrollToId="resource-section" />
       <ResourcesList query={debouncedQuery} />

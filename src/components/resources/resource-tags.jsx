@@ -1,5 +1,6 @@
 import React from "react";
 import { Badge } from "@/components/ui/badge";
+import { CardFooter } from "../ui/card";
 
 // Map badge types to custom Tailwind styles
 const BADGE_STYLES = {
@@ -10,7 +11,7 @@ const BADGE_STYLES = {
 
 export default function ResourceTags({ tags = [], badges = [] }) {
   return (
-    <div className="flex flex-wrap gap-2 items-center">
+    <CardFooter className="flex flex-wrap gap-2 items-center p-0">
       {/* Render all tags (default secondary style) */}
       {tags.map((tag) => (
         <Badge
@@ -37,6 +38,6 @@ export default function ResourceTags({ tags = [], badges = [] }) {
           </Badge>
         );
       })}
-    </div>
+    </CardFooter>
   );
 }
