@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "@/pages/home/home";
-import AboutPage from "@/pages/about/about";
+import HomePage from "@/pages/home/home.jsx";
+import AboutPage from "@/pages/about/about.jsx";
 
 const PageRoutes = () => {
   return (
