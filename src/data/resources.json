@@ -24,7 +24,7 @@
           "iconUrl": "",
           "name": "CloseRouter",
           "url": "https://www.closerouter.com/",
-          "imageUrl": "https://raw.githubusercontent.com/mouryaabhay/handpicked/refs/heads/main/src/assets/previews/closerouter.png?token=GHSAT0AAAAAADNZ2JMFMOCOECU4EIHORF7O2IUPMPQ",
+          "imageUrl": "https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
           "tags": ["AI Platforms", "APIs", "Tools"],
           "badges": []
         },
@@ -170,7 +170,7 @@
           "iconUrl": "",
           "name": "Eruda Debug Console (Mobile)",
           "url": "https://eruda.liriliri.io/",
-          "imageUrl": "https://picsum.photos/300",
+          "imageUrl": "https://camo.githubusercontent.com/d0f6d8eb7aa3c04da21dde1b137049ad3439a7ca17bac6628aa4166a42551dba/68747470733a2f2f65727564612e6c6972696c6972692e696f2f73637265656e73686f742e6a7067",
           "tags": ["Browser Tools", "Debugging Tools", "Frontend"],
           "badges": []
         },
@@ -224,7 +224,7 @@
           "iconUrl": "",
           "name": "PlantUML",
           "url": "https://plantuml.com/",
-          "imageUrl": "https://plantuml.com/og-index",
+          "imageUrl": "https://linest.github.io/2016/07/10/hexo-ext-plantuml/plantUML.png",
           "tags": ["Diagram Tools", "UML", "Software Design"],
           "badges": []
         }
@@ -364,7 +364,7 @@
           "iconUrl": "",
           "name": "TinyWow",
           "url": "https://tinywow.com/",
-          "imageUrl": "https://picsum.photos/300",
+          "imageUrl": "https://tinywow.com/v3/img/tw-laptop.svg",
           "tags": ["Utility Tools", "PDF Tools", "Online Tools"],
           "badges": []
         },
@@ -372,7 +372,7 @@
           "iconUrl": "",
           "name": "Cobalt Tools",
           "url": "https://cobalt.tools/",
-          "imageUrl": "https://picsum.photos/300",
+          "imageUrl": "https://cobalt.tools/meowbalt/smile.png",
           "tags": ["Utility Tools", "Video Downloading"],
           "badges": []
         },
