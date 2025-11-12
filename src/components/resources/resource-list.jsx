@@ -49,7 +49,7 @@ export default function ResourcesList({ query = "" }) {
           <section
             key={category.name}
             id={categoryId}
-            className="flex flex-col gap-8 py-4 px-8"
+            className="flex flex-col gap-8 py-4 md:px-8"
           >
             {/* Header */}
             <div className="flex items-center gap-4 justify-start w-full">
