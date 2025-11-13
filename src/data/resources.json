@@ -164,7 +164,7 @@
           "url": "https://eruda.liriliri.io/",
           "imageUrl": "https://camo.githubusercontent.com/d0f6d8eb7aa3c04da21dde1b137049ad3439a7ca17bac6628aa4166a42551dba/68747470733a2f2f65727564612e6c6972696c6972692e696f2f73637265656e73686f742e6a7067",
           "tags": ["Debugging", "Browser Tools", "Frontend"],
-          "badges": []
+          "badges": ["featured"]
         },
         {
           "iconUrl": "",
@@ -292,7 +292,7 @@
           "url": "https://www.awwwards.com/",
           "imageUrl": "https://assets.awwwards.com/assets/images/pages/about-certificates/awwwards.jpg",
           "tags": ["Design", "UI/UX", "Web Inspiration"],
-          "badges": []
+          "badges": ["featured"]
         }
       ]
     },
@@ -306,7 +306,7 @@
           "url": "https://hoppscotch.io/",
           "imageUrl": "https://hoppscotch.io/banner.png",
           "tags": ["API Testing", "Networking", "Frontend"],
-          "badges": []
+          "badges": ["featured"]
         },
         {
           "iconUrl": "",
@@ -328,7 +328,7 @@
           "url": "https://ui.aceternity.com/",
           "imageUrl": "https://ui.aceternity.com/banner.png",
           "tags": ["UI Libraries", "Components", "Accessibility"],
-          "badges": []
+          "badges": ["new"]
         },
         {
           "iconUrl": "",
@@ -344,7 +344,7 @@
           "url": "https://magicui.design/",
           "imageUrl": "https://magicui.design/og",
           "tags": ["Tailwind", "Components", "UI Kits"],
-          "badges": []
+          "badges": ["new"]
         },
         {
           "iconUrl": "",
@@ -352,7 +352,7 @@
           "url": "https://motion-primitives.com/",
           "imageUrl": "https://motion-primitives.com/twitter-image.jpg?9ca9b9247d6d0fe4=",
           "tags": ["Tailwind", "Components", "UI Kits"],
-          "badges": []
+          "badges": ["new"]
         },
         {
           "iconUrl": "",
@@ -360,7 +360,7 @@
           "url": "https://www.reactbits.dev/",
           "imageUrl": "https://reactbits.dev/og-pic.png",
           "tags": ["React", "Components", "UI Libraries"],
-          "badges": []
+          "badges": ["new"]
         },
         {
           "iconUrl": "",
@@ -376,23 +376,23 @@
           "url": "https://ui.shadcn.com/",
           "imageUrl": "https://ui.shadcn.com/og?title=The%20Foundation%20for%20your%20Design%20System&description=A%20set%20of%20beautifully%20designed%20components%20that%20you%20can%20customize%2C%20extend%2C%20and%20build%20on.%20Start%20here%20then%20make%20it%20your%20own.%20Open%20Source.%20Open%20Code",
           "tags": ["UI Libraries", "Components", "React"],
-          "badges": []
+          "badges": ["new"]
         },
         {
           "iconUrl": "",
           "name": "StackSorted",
           "url": "https://stacksorted.com/",
           "imageUrl": "https://stacksorted.com/preview.png",
-          "tags": ["Frontend", "Components", "UI Libraries"],
+          "tags": ["Frontend", "Components", "Inspiration"],
           "badges": []
         },
         {
           "iconUrl": "",
-          "name": "Twikoo Themes",
+          "name": "Tailark",
           "url": "https://tailark.com/",
           "imageUrl": "https://tailark.com/twitter-image.png?b3b0b0529800f823=",
           "tags": ["Themes", "UI Kits", "Comment System"],
-          "badges": []
+          "badges": ["new"]
         },
         {
           "iconUrl": "",
@@ -429,8 +429,8 @@
           "name": "Cobalt Tools",
           "url": "https://cobalt.tools/",
           "imageUrl": "https://cobalt.tools/meowbalt/smile.png",
-          "tags": ["Video Tools", "Utilities"],
-          "badges": []
+          "tags": ["Video Tools", "Utilities", "Downloading"],
+          "badges": ["featured"]
         },
         {
           "iconUrl": "",
